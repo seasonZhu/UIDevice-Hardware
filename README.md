@@ -1,6 +1,6 @@
 # UIDevice-Hardware
 
-##前言
+## 前言
 
 Swift UIDevice分类 用于判断手机型号等硬件功能
 
@@ -31,7 +31,7 @@ import UIDeviceHardware
 ```
 
 
-##Example
+## Example
 ```
 if UIDevice.deviceType == UIDevice.Info.iPhone8 {
             print("it is iPhone8")
