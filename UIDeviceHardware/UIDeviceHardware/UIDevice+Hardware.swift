@@ -90,7 +90,7 @@ extension UIDevice {
 
 // MARK: - 手机信息
 extension UIDevice {
-    /// uudi
+    /// uudi 注意其实uuid并不是唯一不变的
     public class var uuid: String? {
         return current.identifierForVendor?.uuidString
     }
@@ -119,63 +119,63 @@ extension UIDevice {
 // MARK: - 字符串常量化
 extension UIDevice {
     public struct Info {
-        static let iPodTouch5 = "iPod Touch 5"
+        public static let iPodTouch5 = "iPod Touch 5"
         
-        static let iPodTouch6 = "iPod Touch 6"
+        public static let iPodTouch6 = "iPod Touch 6"
         
-        static let iPhone4 = "iPhone 4"
+        public static let iPhone4 = "iPhone 4"
         
-        static let iPhone4s = "iPhone 4s"
+        public static let iPhone4s = "iPhone 4s"
         
-        static let iPhone5 = "iPhone 5"
+        public static let iPhone5 = "iPhone 5"
         
-        static let iPhone5c = "iPhone 5c"
+        public static let iPhone5c = "iPhone 5c"
         
-        static let iPhone5s = "iPhone 5s"
+        public static let iPhone5s = "iPhone 5s"
         
-        static let iPhone6 = "iPhone 6"
+        public static let iPhone6 = "iPhone 6"
         
-        static let iPhone6Plus = "iPhone 6 Plus"
+        public static let iPhone6Plus = "iPhone 6 Plus"
         
-        static let iPhone6s = "iPhone 6s"
+        public static let iPhone6s = "iPhone 6s"
         
-        static let iPhone6sPlus = "iPhone 6s Plus"
+        public static let iPhone6sPlus = "iPhone 6s Plus"
         
-        static let iPhoneSE = "iPhone SE"
+        public static let iPhoneSE = "iPhone SE"
         
-        static let iPhone7 = "iPhone 7"
+        public static let iPhone7 = "iPhone 7"
         
-        static let iPhone7Plus = "iPhone 7 Plus"
+        public static let iPhone7Plus = "iPhone 7 Plus"
         
-        static let iPhone8 = "iPhone 8"
+        public static let iPhone8 = "iPhone 8"
         
-        static let iPhone8Plus = "iPhone 8 Plus"
+        public static let iPhone8Plus = "iPhone 8 Plus"
         
-        static let iPhoneX = "iPhone X"
+        public static let iPhoneX = "iPhone X"
         
-        static let iPad2 = "iPad 2"
+        public static let iPad2 = "iPad 2"
         
-        static let iPad3 = "iPad 3"
+        public static let iPad3 = "iPad 3"
         
-        static let iPad4 = "iPad 4"
+        public static let iPad4 = "iPad 4"
         
-        static let iPadAir = "iPad Air"
+        public static let iPadAir = "iPad Air"
         
-        static let iPadAir2 = "iPad Air 2"
+        public static let iPadAir2 = "iPad Air 2"
         
-        static let iPadMini = "iPad Mini"
+        public static let iPadMini = "iPad Mini"
         
-        static let iPadMini2 = "iPad Mini 2"
+        public static let iPadMini2 = "iPad Mini 2"
         
-        static let iPadMini3 = "iPad Mini 3"
+        public static let iPadMini3 = "iPad Mini 3"
         
-        static let iPadMini4 = "iPad Mini 4"
+        public static let iPadMini4 = "iPad Mini 4"
         
-        static let iPadPro = "iPad Pro"
+        public static let iPadPro = "iPad Pro"
         
-        static let AppleTV = "Apple TV"
+        public static let AppleTV = "Apple TV"
         
-        static let Simulator = "Simulator"
+        public static let Simulator = "Simulator"
     }
 }
 
