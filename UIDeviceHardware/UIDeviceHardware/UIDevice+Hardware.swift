@@ -12,7 +12,7 @@ import UIKit
 extension UIDevice {
     
     /// 具体的设备的型号
-    class var deviceType: String {
+    public class var deviceType: String {
         
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -63,27 +63,27 @@ extension UIDevice {
 // MARK: - 手机系列判断
 extension UIDevice {
     /// 是否是iPhone系列
-    class var iPhoneSeries: Bool {
+    public class var iPhoneSeries: Bool {
         return current.userInterfaceIdiom == .phone
     }
     
     /// 是否是iPad系列
-    class var iPadSeries: Bool {
+    public class var iPadSeries: Bool {
         return current.userInterfaceIdiom == .pad
     }
     
     /// 是否是iPhone 4.7系列手机
-    class  var isPhone4_7Serier: Bool {
+    public class  var isPhone4_7Serier: Bool {
         return UIScreen.main.bounds.width == 375.0
     }
     
     /// 是否是iPhone 5.5系列手机
-    class var isPhone5_5Series: Bool {
+    public class var isPhone5_5Series: Bool {
         return UIScreen.main.bounds.width == 414.0
     }
     
     /// 是否是iPhone X手机
-    class var isPhoneXSerise: Bool {
+    public class var isPhoneXSerise: Bool {
         return deviceType == Info.iPhoneX
     }
 }
@@ -91,34 +91,34 @@ extension UIDevice {
 // MARK: - 手机信息
 extension UIDevice {
     /// uudi
-    class var uuid: String? {
+    public class var uuid: String? {
         return current.identifierForVendor?.uuidString
     }
     
     /// 设备系统名称
-    class var deviceSystemName: String {
+    public class var deviceSystemName: String {
         return current.systemName
     }
     
     /// 设备名称
-    class var deviceName: String {
+    public class var deviceName: String {
         return current.name
     }
     
     /// 设备版本
-    class var deviceSystemVersion: String {
+    public class var deviceSystemVersion: String {
         return current.systemVersion
     }
     
     /// 设备版本的Float类型, 如果等于-1了那么就说明转换失败了
-    class var deviceFloatSystemVersion: Float {
+    public class var deviceFloatSystemVersion: Float {
         return Float(deviceSystemVersion) ?? -1.0
     }
 }
 
 // MARK: - 字符串常量化
 extension UIDevice {
-    struct Info {
+    public struct Info {
         static let iPodTouch5 = "iPod Touch 5"
         
         static let iPodTouch6 = "iPod Touch 6"
