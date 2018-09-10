@@ -86,6 +86,11 @@ extension UIDevice {
     public class var isPhoneXSerise: Bool {
         return deviceType == Info.iPhoneX
     }
+    
+    /// 是否是全屏系列 目前可以通过状态栏的高度为20 或者 44来判断 为后面的新的全屏机做准备
+    public class var isFullScreenSerise: Bool {
+        return UIApplication.shared.statusBarFrame.height == 44.0
+    }
 }
 
 // MARK: - 手机信息
