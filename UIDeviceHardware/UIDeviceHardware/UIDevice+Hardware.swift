@@ -42,6 +42,9 @@ extension UIDevice {
         case "iPhone10,1", "iPhone10,4":                return "iPhone 8"
         case "iPhone10,2", "iPhone10,5":                return "iPhone 8 Plus"
         case "iPhone10,3", "iPhone10,6":                return "iPhone X"
+        case "iPhone11,2":                              return "iPhone Xs"
+        case "iPhone11,4", "iPhone11,6":                return "iPhone Xs Max"
+        case "iPhone11,8":                              return "iPhone XR"
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
         case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad 3"
         case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad 4"
@@ -52,7 +55,7 @@ extension UIDevice {
         case "iPad4,7", "iPad4,8", "iPad4,9":           return "iPad Mini 3"
         case "iPad5,1", "iPad5,2":                      return "iPad Mini 4"
         case "iPad6,7", "iPad6,8":                      return "iPad Pro"
-        case "AppleTV5,3":                              return "Apple TV"
+        case "AppleTV5,3", "AppleTV6,2":                              return "Apple TV"
         case "i386", "x86_64":                          return "Simulator"
         default:                                        return identifier
             
@@ -157,6 +160,12 @@ extension UIDevice {
         public static let iPhone8Plus = "iPhone 8 Plus"
         
         public static let iPhoneX = "iPhone X"
+        
+        public static let iPhoneXs = "iPhone Xs"
+        
+        public static let iPhoneXsMax = "iPhone Xs Max"
+        
+        public static let iPhoneXR = "iPhone XR"
         
         public static let iPad2 = "iPad 2"
         
